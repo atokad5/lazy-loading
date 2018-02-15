@@ -1,16 +1,17 @@
 {
-  "name": "lazy-loading",
-  "version": "1.0.0",
+  "name": "lazy-loader-js",
+  "version": "1.0.6",
   "description": "",
-  "main": "lazy-loading.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack-dev-server --output-public-path=/build/js/"
   },
+  "repository": "github:atokad5/lazy-loading",
   "author": "Kenny Krosky",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

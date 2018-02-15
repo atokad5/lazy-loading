@@ -1,3 +1,3 @@
-import lazy from './lazy-loading'
+import lazy from 'lazy-loading-js'
 
 lazy();
