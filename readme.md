@@ -1,7 +1,15 @@
 # Lazy Loading 
 
+## Installation
+You can either go into this project and copy the js file in /src/js/lazy-loading.js or run
+
+
+`npm install lazy-loading-js`
+
+
 ## Intro
 This lazy loading script provides a feature that holds the height of your DOM, even when your images haven't fully loaded yet and while they are being loaded in.
+
 
 ## Code example
 ```
