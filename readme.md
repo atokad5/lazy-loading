@@ -17,10 +17,10 @@ This lazy loading script provides a feature that holds the height of your DOM, e
 You must use the following: 
 
 
-  class: lazy-img
+  class: `lazy-img`
 
 
-  data-attributes: data-lazy-src, data-lazy-width, data-lazy-height
+  data-attributes: `data-lazy-src`, `data-lazy-width`, `data-lazy-height`
 
 
   wrap each image around a figure.
@@ -29,3 +29,7 @@ You must use the following:
 ## Styles
 
 You will be able to have access to a `is--loaded` class. This class becomes available when the image becomes fully loaded and is ready to be viewed.
+
+
+## Sup?
+If you have any questions feel free to email me or contact me on Twitter [@ispykenny](https://twitter.com/ispykenny)
