@@ -4,6 +4,8 @@
 
 `npm install lazy-loader-js`
 
+and of course calling it where you want like `lazyJs();`
+
 
 and in your main js file 
 
