@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    figure {
+      margin: 0;
+      opacity: 0;
+      transition: all 600ms ease;
+    }
+    figure img {
+      transition: all 600ms ease;
+    }
+
+    figure.is--loaded {
+      opacity: 1;
+      transition-delay: 100ms;
+    }
+    figure.is--loader img {
+      transform: scale(1)
+    }
+  </style>
+</head>
+<body>
+
+    <figure><img src="" class="lazy-img" data-lazy-src="https://images.pexels.com/photos/310419/pexels-photo-310419.jpeg" data-lazy-width="1260" data-lazy-height="750"></figure>
+    <figure> <img src="" class="lazy-img" data-lazy-src="https://images.pexels.com/photos/340876/pexels-photo-340876.png" data-lazy-width="1260" data-lazy-height="750"></figure>
+    <figure> <img src="" class="lazy-img" data-lazy-src="https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg" data-lazy-width="1260" data-lazy-height="750"></figure>
+    <figure> <img src="" class="lazy-img" data-lazy-src="https://images.pexels.com/photos/42154/pexels-photo-42154.jpeg" data-lazy-width="1260" data-lazy-height="750"></figure>
+    <figure> <img src="" class="lazy-img" data-lazy-src="https://images.pexels.com/photos/860379/pexels-photo-860379.jpeg" data-lazy-width="1260" data-lazy-height="750"></figure>
+  </div>
+
+  <script src="build/js/bundle.js"></script>
+</body>
+</html>
