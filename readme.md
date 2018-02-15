@@ -1,5 +1,8 @@
 # Lazy Loading 
 
+## Intro
+This lazy loading script provides a feature that holds the height of your DOM, even when your images haven't fully loaded yet and while they are being loaded in.
+
 ## Code example
 ```
 <div class="outer-container"> // this is just an example, must use an outer element to set max width of image.
@@ -21,3 +24,8 @@ You must use the following:
 
 
   wrap each image around a figure.
+
+
+## Styles
+
+You will be able to have access to a `is--loaded` class. This class becomes available when the image becomes fully loaded and is ready to be viewed.
