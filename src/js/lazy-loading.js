@@ -3,6 +3,7 @@ export default function() {
  
   const injectSrc = () => {
     lazyImg.forEach( img => {
+
       let elParent = img.parentElement;
       let srcSwap = img.getAttribute('data-lazy-src');
       let lazyWidth = img.getAttribute('data-lazy-width');
@@ -12,6 +13,7 @@ export default function() {
       let getHeight = lazyHeight > 1 ? lazyHeight : 1080;
       
       // set figure styles 
+      
       elParent.style.position = 'relative';
       elParent.style.paddingBottom = getHeight / getWidth * 100 + '%';
       elParent.style.width = 'auto';
@@ -24,7 +26,6 @@ export default function() {
       img.style.width = 100 + '%';
       img.style.height = 100 + '%';
   
-      // setting padding bottom on figure (img parent);
       img.setAttribute('src', srcSwap)
       img.addEventListener('load' , () => elParent.classList.add('is--loaded'))
 
