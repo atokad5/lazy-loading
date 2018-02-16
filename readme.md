@@ -35,7 +35,7 @@ You must use the following:
   data-attributes: `data-lazy-src`, `data-lazy-width`, `data-lazy-height`
 
 
-  wrap each image around a figure.
+  wrap a figure around each image.
 
 
 ## Styles
