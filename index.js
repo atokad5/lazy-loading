@@ -1,4 +1,5 @@
-const lazyImg = document.querySelectorAll('.lazy-img');
+export default function() {
+  const lazyImg = document.querySelectorAll('.lazy-img');
 
   const setDem = () => {
     lazyImg.forEach( img => {
@@ -39,3 +40,4 @@ const lazyImg = document.querySelectorAll('.lazy-img');
   
   setDem();
   window.onload = injectSrc;
+}
