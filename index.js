@@ -1,14 +1,10 @@
-export default function() {
-  const lazyImg = document.querySelectorAll('.lazy-img');
- 
-  const injectSrc = () => {
-    lazyImg.forEach( img => {
+const lazyImg = document.querySelectorAll('.lazy-img');
 
-      let elParent = img.parentElement;
-      let srcSwap = img.getAttribute('data-lazy-src');
+  const setDem = () => {
+    lazyImg.forEach( img => {
       let lazyWidth = img.getAttribute('data-lazy-width');
       let lazyHeight = img.getAttribute('data-lazy-height');
-      
+      let elParent = img.parentElement;
       let getWidth = lazyWidth > 1 ? lazyWidth : 1920;
       let getHeight = lazyHeight > 1 ? lazyHeight : 1080;
       
@@ -25,6 +21,15 @@ export default function() {
       img.style.left = 0;
       img.style.width = 100 + '%';
       img.style.height = 100 + '%';
+    })
+  }
+ 
+  const injectSrc = () => {
+    lazyImg.forEach( img => {
+
+      let elParent = img.parentElement;
+      let srcSwap = img.getAttribute('data-lazy-src');
+      
   
       img.setAttribute('src', srcSwap)
       img.addEventListener('load' , () => elParent.classList.add('is--loaded'))
@@ -32,9 +37,5 @@ export default function() {
     })
   }
   
+  setDem();
   window.onload = injectSrc;
-
-}
-
-
-

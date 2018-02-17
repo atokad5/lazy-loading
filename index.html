@@ -8,19 +8,21 @@
   <style>
     figure {
       margin: 0;
-      opacity: 0;
       transition: all 600ms ease;
+      background: red;
     }
     figure img {
       transition: all 600ms ease;
+      opacity: 0;
     }
 
     figure.is--loaded {
       opacity: 1;
       transition-delay: 100ms;
     }
-    figure.is--loader img {
-      transform: scale(1)
+    figure.is--loaded img {
+      transform: scale(1);
+      opacity: 1;
     }
   </style>
 </head>
